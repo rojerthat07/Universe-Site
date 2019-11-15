@@ -1,23 +1,36 @@
 const tl = new TimelineMax();
 const tl2 = new TimelineMax();
+const tl3 = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 
 //Scences from index.html
-tl.from("#ready-question", 1, { y:200,opacity:0});
-
+//1
+tl.from("#ready-question", 2, { y:200,opacity:-0.5});
 const scene1 = new ScrollMagic.Scene({
     triggerElement: "#ready-question"
 })
 .setTween(tl)
 .addTo(controller)
-//Scences from start.html
-tl2.from("#universe__content--left",2, {x:-500,opacity:-0.5});
+//2
+tl2.from("#imageCaption__image",3, {opacity:0});
+tl2.from("#imageCaption__head",2, {opacity:0});
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: "#universe__background--section"
+    triggerElement: "#imageCaptionLeft__container"
 })
 .setTween(tl2)
 .addTo(controller)
+//Scences from start.html
+tl2.from("#universe__content--left",2, {x:-500,opacity:-0.5});
+const scene3 = new ScrollMagic.Scene({
+    triggerElement: "#universe__background--section"
+})
+.setTween(tl3)
+.addTo(controller)
+//
+
+
+
 
 
 
