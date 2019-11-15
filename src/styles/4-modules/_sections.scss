@@ -204,15 +204,18 @@
     }
 
     .universe__content--left {
-        padding: 1em;
+        padding: 0 1em;
         position: absolute;
-        bottom: 5%;
+        bottom: 9%;
         left: 2%;
         width: 90%;
         font-size: 0.8em;
         color: rgb(233, 233, 233);
         z-index: 1;
         text-align: left;
+        @include tablet{
+            bottom: 6%;
+        }
 
         .universe__header {
             display: inline-block;
