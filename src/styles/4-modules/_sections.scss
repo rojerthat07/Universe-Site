@@ -146,7 +146,7 @@
         left: 0;
         background-color: rgb(2, 2, 2);
         z-index: 1;
-        opacity: 0.6;
+        opacity: .3;
     }
 
     .universe__content {
@@ -164,7 +164,7 @@
         left: 45%;
            }
            @include tablet{
-            top: 25%;
+            top: 35%;
         left: 5%;
         width: 90%;
            }

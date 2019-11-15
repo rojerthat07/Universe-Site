@@ -623,7 +623,7 @@ template {
   left: 0;
   background-color: #020202;
   z-index: 1;
-  opacity: 0.6;
+  opacity: .3;
 }
 
 .universe__background--section .universe__content {
@@ -647,7 +647,7 @@ template {
 
 @media (max-width: 750px) {
   .universe__background--section .universe__content {
-    top: 25%;
+    top: 35%;
     left: 5%;
     width: 90%;
   }
