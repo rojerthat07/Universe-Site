@@ -22,16 +22,19 @@ const scene2 = new ScrollMagic.Scene({
 .setTween(tl2)
 .addTo(controller)
 //Scences from start.html
-tl3.from("#universe__content--left",3, {x:-500,opacity:-0.5});
+tl3.from("#universe__content--left",3, {opacity:-0.5});
 const scene3 = new ScrollMagic.Scene({
     triggerElement: "#universe__background--section"
 })
 .setTween(tl3)
 .addTo(controller)
     //
-tl4.from(".galaxy__image--second",3, {x:-400,opacity:-0.5});
-tl4.from(".galaxy__image--fourth",3, {x:400,opacity:-0.5},'=-2');
-tl4.from(".galaxy__image--third",3, {x:400,opacity:-0.5},'=-2');
+tl4.from(".galaxy__image--second",2, {x:-400,opacity:-0.5});
+tl4.from(".galaxy__image--fourth",2, {x:400,opacity:-0.5},'=-1');
+tl4.from(".galaxy__image--third",2, {x:400,opacity:-0.5},'=-1');
+tl4.from(".galaxy__text",2, {x:400,opacity:-0.5},'=-3');
+tl4.from(".galaxy__header",2, {opacity:-1},'=-4');
+tl4.from(".galaxy__image",2, {y:-400,opacity:-0.5},'=-4');
 
 
 const scene4 = new ScrollMagic.Scene({
