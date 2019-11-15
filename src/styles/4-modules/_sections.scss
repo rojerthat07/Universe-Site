@@ -171,15 +171,24 @@
         
        
         .universe__header {
-            font-size: 4.0em;
+            font-size: 3em;
             margin: 0;
-            letter-spacing: 0.2em;
-          
            @include laptop{
             font-size: 3em;
            }
            @include tablet{
             font-size: 1.5em;
+           }
+
+           .universe-txt{
+               font-family: 'Roboto Thin';
+               display: inline-block;
+               .pointer{
+                
+                  animation-name: pointer-blink;
+                  animation-duration: .4s;
+                  animation-iteration-count: infinite;
+               }
            }
         }
 

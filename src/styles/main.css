@@ -1,3 +1,39 @@
+@-webkit-keyframes pointer-blink {
+  from {
+    border-right: none;
+  }
+  to {
+    border-right: 1px solid white;
+  }
+}
+
+@keyframes pointer-blink {
+  from {
+    border-right: none;
+  }
+  to {
+    border-right: 1px solid white;
+  }
+}
+
+@-webkit-keyframes pointer-blink-stop {
+  from {
+    border-right: 1px solid white;
+  }
+  to {
+    border-right: 1px solid white;
+  }
+}
+
+@keyframes pointer-blink-stop {
+  from {
+    border-right: 1px solid white;
+  }
+  to {
+    border-right: 1px solid white;
+  }
+}
+
 html {
   background-color: black;
   overflow-x: hidden;
@@ -8,6 +44,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'Roboto Light';
 }
 
 video {
@@ -654,9 +691,8 @@ template {
 }
 
 .universe__background--section .universe__content .universe__header {
-  font-size: 4.0em;
+  font-size: 3em;
   margin: 0;
-  letter-spacing: 0.2em;
 }
 
 @media (max-width: 950px) {
@@ -669,6 +705,20 @@ template {
   .universe__background--section .universe__content .universe__header {
     font-size: 1.5em;
   }
+}
+
+.universe__background--section .universe__content .universe__header .universe-txt {
+  font-family: 'Roboto Thin';
+  display: inline-block;
+}
+
+.universe__background--section .universe__content .universe__header .universe-txt .pointer {
+  -webkit-animation-name: pointer-blink;
+          animation-name: pointer-blink;
+  -webkit-animation-duration: .4s;
+          animation-duration: .4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .universe__background--section .universe__content .universe__information {

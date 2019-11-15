@@ -1,0 +1,9 @@
+@keyframes pointer-blink{
+    from{border-right:none;}
+    to{border-right:1px solid white;}
+}
+@keyframes pointer-blink-stop{
+    from{border-right:1px solid white;}
+    to{border-right:1px solid white;}
+}
+
