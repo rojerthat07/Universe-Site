@@ -1,0 +1,36 @@
+html {
+    background-color:$primaryBackground;
+    overflow-x:hidden;
+}
+.start__body{
+    background-image:url('/build/images/starsbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+ 
+video{
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+    display:block;
+}
+
+body{
+    background-color:$primaryBackground;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+a:hover{
+    text-decoration: none;
+}

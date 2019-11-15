@@ -1,0 +1,22 @@
+//Media Querys
+
+@mixin desktop {
+    @media (max-width: #{$largeScreen}) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (max-width: #{$mediumScreen}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: #{$smallScreen}) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: #{$xSmallScreen}) {
+        @content;
+    }
+}

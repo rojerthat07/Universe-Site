@@ -1,0 +1,13 @@
+.jumbotron{
+    .container{
+        h6{
+            padding:1em;
+            @include laptop{
+                font-size: 3em;
+            }
+            @include tablet{
+                font-size: 2em;
+            }
+        }
+    }
+}

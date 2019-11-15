@@ -1,0 +1,6 @@
+color pallete:
+#BA38BA
+#865086
+#6E216E
+#BA70BA
+#3B123B

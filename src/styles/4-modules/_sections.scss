@@ -1,0 +1,550 @@
+//Section
+.section__title {
+    background: black;
+    color: rgb(253, 253, 253);
+    padding: 0.3em;
+    margin: 0;
+    font-size: 5.5em;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    @include laptop{
+        font-size: 4.5em;
+       }
+    @include tablet{
+        font-size: 3.5em;
+       }
+
+    &:hover {
+        color: rgb(207, 204, 204);
+    }
+}
+
+.fullspace__section {
+    text-align: center;
+    color: black;
+    background-color: white;
+    height: auto;
+    padding: 1em 6em;
+    @include laptop{
+        padding: 2rem 2rem;
+       }
+    @include tablet{
+        padding: 2rem 1rem;
+       }
+
+    img {
+        width: 150px;
+        height: auto;
+        border-radius: 100%;
+    }
+
+    h1 {
+        margin: 1em 0;
+        @include laptop{
+            font-size:4em;
+           }
+        @include tablet{
+            font-size:3em;
+           }
+    }
+
+    p {
+        margin: 2em 10%;
+    }
+
+}
+
+.fullspace__section--blackhole {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 90vh;
+    h1{
+        @include laptop{
+            font-size: 4em;
+        }
+        @include tablet{
+            font-size: 3em;
+        }
+    }
+}
+
+.section__description {
+    margin: 0;
+    color: rgb(214, 212, 212);
+    background: black;
+    padding: 2em 5em;
+    text-align: center;
+    font-size: .9em;
+    line-height: 2em;
+    @include laptop{
+        font-size: .8em;
+       }
+    @include tablet{
+        font-size: .6em;
+       }
+
+    img {
+        width: 80%;
+        height: auto;
+        display:block;
+        margin:auto;
+    }
+
+    h1 {
+        margin: 1em 0em;
+        @include laptop{
+            font-size: 5em;
+           }
+        @include tablet{
+            font-size: 3em;
+           }
+    }
+
+    p {
+        padding: 2em 0;
+        border-bottom: 1px solid rgb(109, 33, 109);
+
+        &:hover {
+            border-bottom: 1px solid rgb(219, 215, 219);
+        }
+    }
+
+}
+
+//First Section
+.universe__background--section {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: relative;
+    background-position-y: 200px;
+    
+
+    .universe__video {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+
+        video {
+            width: 100%;
+            height: 100%;
+          
+        }
+
+    }
+
+    .universe__background--overlay {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: rgb(2, 2, 2);
+        z-index: 1;
+        opacity: 0.6;
+    }
+
+    .universe__content {
+        padding: 1em;
+        position: absolute;
+        top: 31%;
+        left: 51%;
+        width: 50%;
+        font-size: 1.2em;
+        color: rgb(233, 233, 233);
+        z-index: 1;
+        text-align: center;
+        @include laptop{
+            top: 25%;
+        left: 45%;
+           }
+           @include tablet{
+            top: 25%;
+        left: 5%;
+        width: 90%;
+           }
+        
+       
+        .universe__header {
+            font-size: 4.0em;
+            margin: 0;
+            letter-spacing: 0.2em;
+          
+           @include laptop{
+            font-size: 3em;
+           }
+           @include tablet{
+            font-size: 1.5em;
+           }
+        }
+
+        .universe__information {
+            line-height: 1.6em;
+            @include laptop{
+                font-size: .8em;
+               }
+               @include tablet{
+                font-size: .9em;
+               }
+        }
+    }
+
+    .universe__content--left {
+        padding: 1em;
+        position: absolute;
+        bottom: 5%;
+        left: 2%;
+        width: 90%;
+        font-size: 0.8em;
+        color: rgb(233, 233, 233);
+        z-index: 1;
+        text-align: left;
+
+        .universe__header {
+            display: inline-block;
+            letter-spacing: 0.2em;
+            border-bottom: 1px solid white;
+            padding-bottom: 0.5em;
+            @include laptop{
+               font-size:1.2em;
+               }
+        }
+
+        .universe__information {
+            line-height: 2em;
+            @include laptop{
+                font-size:.8em;
+                }
+        }
+    }
+}
+
+
+//Second Section
+.galaxy__section {
+    height: 100%;
+
+    background-color: rgb(26, 26, 26);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    @include tablet{
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        border-radius: 3%;
+        display: inline-block;
+       
+
+        &:hover {
+            border-left: 1px solid rgb(51, 53, 54);
+            box-shadow: 5px 5px 10px rgb(75, 74, 74);
+        }
+    }
+
+    .galaxy__image {
+        img {
+            width: 100%;
+            height: auto;
+            
+            @include tablet{
+                width:80%;
+                display:block;
+            margin:auto;
+            padding:2em;
+            }
+        }
+    }
+
+    .galaxy__image--second {
+        position: absolute;
+        bottom: 3%;
+        left: 42%;
+        z-index: 1;
+        display: inline-block;
+        @include laptop{
+            bottom: 8%;
+        }
+        @include tablet{
+            display:none;
+        }
+        
+
+        img {
+            width: 20%;
+            height: auto;
+            @include laptop{
+                width: 15%;
+            }
+        }
+    }
+
+    .galaxy__image--third {
+        position: absolute;
+        bottom: 7%;
+        left: 0.5%;
+        @include tablet{
+            bottom: 2%;
+            left:2%;
+        }
+        img {
+            width: 25%;
+            height: auto;
+            @include laptop{
+                width: 20%;
+            }
+            @include tablet{
+                display:none;
+            }
+           
+        }
+    }
+
+    .galaxy__image--fourth {
+        position: absolute;
+        bottom: 7%;
+        left: 22%;
+        @include laptop{
+            bottom: 10%;
+        }
+        @include tablet{
+            display:none;
+        }
+
+        img {
+            width: 23%;
+            height: auto;
+            @include laptop{
+                width: 18%;
+            }
+        }
+    }
+
+    .galaxy__information {
+        color: rgb(236, 236, 236);
+        padding: 1em;
+
+        .galaxy__header {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3.7em;
+            margin: 0.1em 0;
+            padding: 0;
+            transition: 2s;
+            display: inline-block;
+            @include laptop{
+                font-size: 3em;
+    
+            }
+        }
+
+        .galaxy__text {
+            font-size: 0.9em;
+            line-height: 1.6em;
+            padding: 1em 2em 0 3em;
+            border-bottom: 2px double rgb(109, 33, 109);
+            padding-bottom: 6em;
+            @include laptop{
+                font-size: .8em;
+    
+            }
+        }
+
+    }
+}
+
+//Third Section
+.stars__section--container {
+    color: rgb(231, 231, 231);
+    height: auto;
+    padding: 2em 4em;
+
+    .stars__sections {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em 0;
+        @include laptop{
+           
+           }
+        @include tablet{
+            grid-template-columns: 1fr;
+            text-align: center;
+           }
+
+        .stars__image {
+            img {
+                width: 200px;
+                height: auto;
+                border-radius: 100%;
+                border: 1px solid rgb(255, 251, 0);
+                
+            }
+        }
+
+        .stars__description {
+            .stars__header {
+                font-size: 3em;
+                margin: 0.3em 0em;
+            }
+
+            .stars__information {
+                font-size: 0.9em;
+                padding: 0em 1.5em;
+                line-height: 2.5em;
+                @include laptop{
+                    font-size: 0.8em;
+                }
+             @include tablet{
+                font-size: 0.7em;
+                }
+            }
+        }
+    }
+
+    .stars__sections--left {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        @include tablet{
+            grid-template-columns: 1fr;
+            text-align: center;
+           }
+
+        .stars__image {
+            img {
+                width: 200px;
+                height: auto;
+                border-radius: 100%;
+                border: 1px solid rgb(255, 251, 0);
+                float: right;
+                @include tablet{
+                    float:none;
+                   }
+            }
+        }
+
+        .stars__description {
+            .stars__header {
+                font-size: 3em;
+                margin: 0.3em 0em;
+                @include laptop{
+                    font-size: 2.5em;
+                }
+             @include tablet{
+                font-size: 2em;
+                }
+            }
+
+            .stars__information {
+                font-size: 0.9em;
+                padding: 0em 1.5em;
+                line-height: 2.5em;
+                @include laptop{
+                    font-size: 0.8em;
+                }
+             @include tablet{
+                font-size: 0.7em;
+                }
+            }
+        }
+    }
+}
+
+
+//Fourth Section
+
+.planets__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    height: 100%;
+
+    img {
+        width: 17em;
+        height: auto;
+        opacity: 0.6;
+        transition: 1.5s;
+        z-index: 0;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    img:nth-of-type(1) {
+        width: 49em;
+        height: 630px;
+        grid-row: 1/5;
+    }
+
+    .planets__description {
+        opacity: 0;
+        position: absolute;
+        display: block;
+        padding: 0em 3em;
+        color: white;
+        transition: 1.5s;
+        width: 47.5em;
+        height: 100vh;
+        z-index: 0;
+
+        &:hover {
+            background-color: rgba(17, 17, 17, 0.3);
+        }
+
+        .planets__description--header {
+            color: white;
+        }
+
+        .planets__description--information {
+            color: rgb(218, 216, 216);
+        }
+    }
+}
+
+
+//Final Section
+.final__section {
+    background-color: rgb(2, 2, 2);
+    color: white;
+    text-align: center;
+    padding: 2rem 5rem;
+    font-size: .9em;
+    line-height: 2em;
+    p{
+        @include laptop{
+            font-size: .8em;
+        }
+        @include tablet{
+            font-size: .8em;
+        }
+        
+    }
+}
+
+
+
+.contact__icons{
+
+   padding:1em;
+   i{
+    padding:0.2em; 
+    cursor:pointer;
+    &:hover{
+        color:rgb(126, 123, 123);
+    }
+   }
+}

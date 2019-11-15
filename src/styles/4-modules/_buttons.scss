@@ -1,0 +1,13 @@
+.button--go__container{
+    .button--go__button{
+        display:inline-block;
+        padding: 0.5em 2em;
+        font-size: 0.8em;
+        border:2px solid rgb(109, 33, 109);
+        background-color: black;
+        color:white;
+        &:hover{
+            background-color: rgb(56, 55, 55);
+        }
+    }
+}
