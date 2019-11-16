@@ -628,7 +628,8 @@ template {
 }
 
 .section__description h1 {
-  margin: 1em 0em;
+  margin: 0em 0em 1em 0em;
+  font-size: 4em;
 }
 
 @media (max-width: 950px) {
@@ -1004,6 +1005,12 @@ template {
   border: 1px solid #fffb00;
 }
 
+@media (max-width: 750px) {
+  .stars__section--container .stars__sections .stars__image img {
+    width: 150px;
+  }
+}
+
 .stars__section--container .stars__sections .stars__description .stars__header {
   font-size: 3em;
   margin: 0.3em 0em;
@@ -1060,6 +1067,7 @@ template {
 
 @media (max-width: 750px) {
   .stars__section--container .stars__sections--left .stars__image img {
+    width: 150px;
     float: none;
   }
 }
