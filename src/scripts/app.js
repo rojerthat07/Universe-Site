@@ -23,19 +23,20 @@ const scene2 = new ScrollMagic.Scene({
 .setTween(tl2)
 .addTo(controller)
 //Scences from start.html
+    //Universe Background Section
 tl3.from("#universe__content--left",3, {opacity:-0.5});
 const scene3 = new ScrollMagic.Scene({
     triggerElement: "#universe__background--section"
 })
 .setTween(tl3)
 .addTo(controller)
-    //
+    //Galaxy Section
 tl4.from(".galaxy__image--second",2, {x:-400,opacity:-0.5});
 tl4.from(".galaxy__image--fourth",2, {x:400,opacity:-0.5},'=-1');
 tl4.from(".galaxy__image--third",2, {x:400,opacity:-0.5},'=-1');
-tl4.from(".galaxy__text",2, {x:400,opacity:-0.5},'=-3');
+tl4.from(".galaxy__text",3, {x:-700,opacity:-0.5},'=-3');
 tl4.from(".galaxy__header",2, {opacity:-1},'=-4');
-tl4.from(".galaxy__image",2, {y:-400,opacity:-0.5},'=-4');
+tl4.from(".galaxy__image",3, {opacity:-0.5},'=-4');
 
 
 const scene4 = new ScrollMagic.Scene({
@@ -43,8 +44,25 @@ const scene4 = new ScrollMagic.Scene({
 })
 .setTween(tl4)
 .addTo(controller)
-    //
-    tl5.from("#star1",1, {opacity:0});
+    //Stars Section
+tl5.from("#star1",2, {scale:0});
+tl5.from("#star1-description",2, {opacity:0}, '=-1');
+tl5.from("#star2",2, {scale:0});
+tl5.from("#star2-description",2, {opacity:0}, '=-1');
+tl5.from("#star3",2, {scale:0});
+tl5.from("#star3-description",2, {opacity:0}, '=-1');
+tl5.from("#star4",2, {scale:0});
+tl5.from("#star4-description",2, {opacity:0}, '=-1');
+tl5.from("#star5",2, {scale:0});
+tl5.from("#star5-description",2, {opacity:0}, '=-1');
+tl5.from("#star6",2, {scale:0});
+tl5.from("#star6-description",2, {opacity:0}, '=-1');
+tl5.from("#star7",2, {scale:0});
+tl5.from("#star7-description",2, {opacity:0}, '=-1');
+tl5.from("#star8",2, {scale:0});
+tl5.from("#star8-description",2, {opacity:0}, '=-1');
+tl5.from("#star9",2, {scale:0});
+tl5.from("#star9-description",2, {opacity:0}, '=-1');
 
 
 const scene5 = new ScrollMagic.Scene({
