@@ -1,1 +1,0 @@
-function descriptionAppear(e){document.getElementById(e).style.opacity="1",console.log(23)}function descriptionDAppear(e){document.getElementById(e).style.opacity="0"}
