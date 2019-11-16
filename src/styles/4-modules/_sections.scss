@@ -1,4 +1,4 @@
-//Section
+//Global Section
 .section__title {
     background: black;
     color: rgb(253, 253, 253);
@@ -67,9 +67,7 @@
    
 }
 
-
-
-
+//Particle.JS 
 #particles-js{
     height:100vh;
     margin:0;
@@ -97,7 +95,6 @@
         
     }
 }
-
 
 .section__description {
     margin: 0;
@@ -142,6 +139,7 @@
 
 }
 
+//Unique Sections
 //Universe Section
 .universe__background--section {
     height: 100vh;
@@ -264,7 +262,7 @@
 }
 
 
-//Second Section
+//Galaxy Section
 .galaxy__section {
     height: 100%;
 
@@ -398,7 +396,7 @@
     }
 }
 
-//Third Section
+//Stars Section
 .stars__section--container {
     color: rgb(231, 231, 231);
     height: auto;
@@ -501,7 +499,7 @@
 }
 
 
-//Fourth Section
+//Planets Section
 
 .planets__container {
     display: grid;
@@ -574,8 +572,7 @@
     }
 }
 
-
-
+//Footer Section
 .contact__icons{
 
    padding:1em;
