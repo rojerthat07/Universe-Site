@@ -2,6 +2,7 @@ const tl = new TimelineMax();
 const tl2 = new TimelineMax();
 const tl3 = new TimelineMax();
 const tl4 = new TimelineMax();
+const tl5 = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 
 //Scences from index.html
@@ -43,7 +44,14 @@ const scene4 = new ScrollMagic.Scene({
 .setTween(tl4)
 .addTo(controller)
     //
-    
+    tl5.from("#star1",1, {opacity:0});
+
+
+const scene5 = new ScrollMagic.Scene({
+    triggerElement: "#star1"
+})
+.setTween(tl5)
+.addTo(controller)
 
 
 
