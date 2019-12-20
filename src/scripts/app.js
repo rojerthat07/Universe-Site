@@ -7,13 +7,6 @@ const controller = new ScrollMagic.Controller();
 
 //Scences from index.html
     //1
-tl.from("#ready-question", 2, { y:200,opacity:-0.5});
-const scene1 = new ScrollMagic.Scene({
-    triggerElement: "#ready-question"
-})
-.setTween(tl)
-.addTo(controller)
-    //2
 tl2.from("#imageCaption__image",3, {opacity:0});
 tl2.from("#imageCaption__head",2, {opacity:0});
 
@@ -45,24 +38,24 @@ const scene4 = new ScrollMagic.Scene({
 .setTween(tl4)
 .addTo(controller)
     //Stars Section
-tl5.from("#star1",2, {scale:0});
-tl5.from("#star1-description",2, {opacity:0}, '=-1');
-tl5.from("#star2",2, {scale:0});
-tl5.from("#star2-description",2, {opacity:0}, '=-1');
-tl5.from("#star3",2, {scale:0});
-tl5.from("#star3-description",2, {opacity:0}, '=-1');
-tl5.from("#star4",2, {scale:0});
-tl5.from("#star4-description",2, {opacity:0}, '=-1');
-tl5.from("#star5",2, {scale:0});
-tl5.from("#star5-description",2, {opacity:0}, '=-1');
-tl5.from("#star6",2, {scale:0});
-tl5.from("#star6-description",2, {opacity:0}, '=-1');
-tl5.from("#star7",2, {scale:0});
-tl5.from("#star7-description",2, {opacity:0}, '=-1');
-tl5.from("#star8",2, {scale:0});
-tl5.from("#star8-description",2, {opacity:0}, '=-1');
-tl5.from("#star9",2, {scale:0});
-tl5.from("#star9-description",2, {opacity:0}, '=-1');
+tl5.from("#star1",1, {scale:0});
+tl5.from("#star1-description",1, {opacity:0}, '=-1');
+tl5.from("#star2",1, {scale:0});
+tl5.from("#star2-description",1, {opacity:0}, '=-1');
+tl5.from("#star3",1, {scale:0});
+tl5.from("#star3-description",1, {opacity:0}, '=-1');
+tl5.from("#star4",1, {scale:0});
+tl5.from("#star4-description",1, {opacity:0}, '=-1');
+tl5.from("#star5",1, {scale:0});
+tl5.from("#star5-description",1, {opacity:0}, '=-1');
+tl5.from("#star6",1, {scale:0});
+tl5.from("#star6-description",1, {opacity:0}, '=-1');
+tl5.from("#star7",1, {scale:0});
+tl5.from("#star7-description",1, {opacity:0}, '=-1');
+tl5.from("#star8",1, {scale:0});
+tl5.from("#star8-description",1, {opacity:0}, '=-1');
+tl5.from("#star9",1, {scale:0});
+tl5.from("#star9-description",1, {opacity:0}, '=-1');
 
 
 const scene5 = new ScrollMagic.Scene({
