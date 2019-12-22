@@ -6,7 +6,21 @@
     padding:2em 5em;
     grid-column-gap: 1.5em;
 
+    @include laptop{
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    @include mobile{
+        grid-template-columns: 1fr;
+
+    }
+
     .footer__content{
+        @include mobile{
+           border-bottom:1px solid black;
+            padding:1em 0;
+        }
         a{
             color:black;
             &:hover{
@@ -17,16 +31,25 @@
         .footer__icon{
             margin-right:1em;
             font-size: 1.4em;
+            @include tablet{
+                font-size: 1em;
+            }
         }
     
         .footer__heading{
             font-size: 1em;
             font-family: 'Roboto';
+            @include tablet{
+                font-size: .8em;
+            }
         }
 
         .footer__text{
             font-size: .8em;
             margin:1.2em auto;
+            @include tablet{
+                font-size: .7em;
+            }
         }
 
         .footer__input{
@@ -36,6 +59,12 @@
             font-size: .9em;
             border: none;
             background-color: rgb(53, 52, 52);
+            @include tablet{
+                font-size: .8em;
+            }
+            @include mobile{
+                font-size: .6em;
+             }
         }
     
         .footer__button{
@@ -48,6 +77,12 @@
             &:hover{
                 background-color: rgb(68, 22, 68);
             }
+            @include tablet{
+                font-size: .8em;
+            }
+            @include mobile{
+                font-size: .6em;
+             }
         }
 
 
@@ -57,6 +92,7 @@
             i{
             padding:0.2em; 
             cursor:pointer;
+            
             &:hover{
                 color:rgb(126, 123, 123);
             }

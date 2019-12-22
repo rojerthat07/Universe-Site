@@ -122,11 +122,9 @@
         margin: 0em 0em 1em 0em;
         font-size: 4em;
         @include laptop{
-            font-size: 5em;
-           }
-        @include tablet{
             font-size: 3em;
            }
+       
     }
 
     p {
