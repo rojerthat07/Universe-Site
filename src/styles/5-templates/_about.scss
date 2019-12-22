@@ -1,21 +1,37 @@
 .about{
     text-align: center;
-
+    margin:2em;
     .about__heading{
     color:white;
     font-family: 'Moon';
     }
     .about__paragraph{
-        font-size: .9em;
-        font-family: 'Roboto Light';
+        font-size: 1.2em;
+        font-family: 'Roboto Thin';
         width:60%;
-        margin: auto;
+        margin: 1em auto;
         color: white;
+        @include tablet{
+            font-size: .9em;
+            width:80%;
+        }
     }
     .about__image{
         width:40%;
         height:auto;
         display: block;
         margin: auto;
+    }
+
+    .about__quotation{
+        color: white;
+        width:90%;
+        text-align: right;
+      font-family: 'Arizonia', cursive;
+      font-size: 1.2em;
+        @include tablet{
+            font-size: .9em;
+            width:100%;
+        }
     }
 }
