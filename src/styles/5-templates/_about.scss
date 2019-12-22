@@ -1,0 +1,21 @@
+.about{
+    text-align: center;
+
+    .about__heading{
+    color:white;
+    font-family: 'Moon';
+    }
+    .about__paragraph{
+        font-size: .9em;
+        font-family: 'Roboto Light';
+        width:60%;
+        margin: auto;
+        color: white;
+    }
+    .about__image{
+        width:40%;
+        height:auto;
+        display: block;
+        margin: auto;
+    }
+}
