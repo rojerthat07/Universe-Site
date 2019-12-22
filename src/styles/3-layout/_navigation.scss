@@ -1,12 +1,19 @@
-.nav-item {
-    color:white;
-    font-size: 1.0em;
-    margin-right:2em;
-    font-weight: lighter;
-    a{
+.navbar{
+    position: sticky;
+    top:0;
+    z-index: 2;
+    .nav-item {
         color:white;
+        font-size: 1.0em;
+        margin-right:2em;
+        font-weight: lighter;
+        a{
+            color:white;
+        }
     }
 }
+
+
 
 
 

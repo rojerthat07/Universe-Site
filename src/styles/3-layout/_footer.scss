@@ -1,0 +1,71 @@
+.footer{
+    background-color: white;
+    color:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:2em 5em;
+    grid-column-gap: 1.5em;
+
+    .footer__content{
+        a{
+            color:black;
+            &:hover{
+                color:rgb(128, 123, 123);
+            }
+        }
+    
+        .footer__icon{
+            margin-right:1em;
+            font-size: 1.4em;
+        }
+    
+        .footer__heading{
+            font-size: 1em;
+            font-family: 'Roboto';
+        }
+
+        .footer__text{
+            font-size: .8em;
+            margin:1.2em auto;
+        }
+
+        .footer__input{
+            color: white;
+            border: 1px solid white;
+            padding: .8em 1em;
+            font-size: .9em;
+            border: none;
+            background-color: rgb(53, 52, 52);
+        }
+    
+        .footer__button{
+            padding: .5em 1em;
+            background-color: rgb(109, 33, 109);
+            font-size: .9em;
+            border:none;
+            color:white;
+            margin:1.5em 0;
+            &:hover{
+                background-color: rgb(68, 22, 68);
+            }
+        }
+
+
+        
+        .contact__icons{
+        
+            i{
+            padding:0.2em; 
+            cursor:pointer;
+            &:hover{
+                color:rgb(126, 123, 123);
+            }
+            }
+        }
+ 
+    }
+
+  
+    
+   
+}

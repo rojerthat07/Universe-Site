@@ -10,13 +10,14 @@
         top:10%;
         right:50%;
         left:3%;
-        font-size:6em;
+        font-size:5em;
+        font-family: 'Moon';
 
 
     
   
       @include laptop{
-        font-size:5em;
+        font-size:4em;
         right:30%;
       }
 
