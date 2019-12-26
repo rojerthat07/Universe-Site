@@ -1,7 +1,7 @@
 //Media Querys
 
 @mixin desktop {
-    @media (max-width: #{$largeScreen}) {
+    @media (min-width: #{$largeScreen}) {
         @content;
     }
 }

@@ -3,6 +3,11 @@
 
     .imageCaption__image{
         width:100%;
+        display: block;
+        margin: auto;
+        @include desktop{
+          width:80%;
+        }
     }
 
     .imageCaption__head{
@@ -12,23 +17,33 @@
         left:3%;
         font-size:5em;
         font-family: 'Moon';
+        text-shadow: 3px 3px 2px black;
 
+        @include desktop{
+          right:2%;
+          top:15%;
+          font-size:7em;
+          text-align: center;
+          text-shadow: 3px 3px 2px black;
+        }
 
-    
-  
       @include laptop{
-        font-size:4em;
-        right:30%;
+        top:10%;
+        right:50%;
+        left:3%;
+        text-align: left;
+        font-size:5em;
+        right:40%;
       }
 
       @include tablet {
-        font-size:3em;
-        top:0%;
+        font-size:4em;
+        right:50%;
       }
 
       @include mobile {
-        font-size:2em;
-     
+        font-size:3em;
+      
       }
 
     }
