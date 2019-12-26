@@ -147,6 +147,9 @@
     background: black;
     position: relative;
     background-position-y: 200px;
+   @include desktop{
+       height:90vh;
+   }
     
 
     .universe__video {
@@ -172,6 +175,9 @@
         background-color: rgb(2, 2, 2);
         z-index: 1;
         opacity: .3;
+        @include desktop{
+            height:90vh;
+        }
     }
 
     .universe__content {
@@ -240,6 +246,9 @@
         text-align: left;
         @include tablet{
             bottom: 6%;
+        }
+        @include desktop{
+            bottom: 5%;
         }
 
         .universe__header {
@@ -389,7 +398,9 @@
             padding-bottom: 6em;
             @include laptop{
                 font-size: .8em;
-    
+            }
+            @include desktop{
+                font-size: 1.2em;
             }
         }
 
@@ -518,7 +529,9 @@
     }
 
     img {
-        width: 17em;
+        width: 70%;
+        display: block;
+        margin: auto;
         height: auto;
         opacity: 0.6;
         transition: 1.5s;
@@ -577,12 +590,16 @@
         padding:2em;
      border-bottom: 1px solid rgb(104, 104, 104);
     }
+    .planets__description--header{
+        margin-top:.3em;
+    }
     img{
         margin:2em;
         width:40%;
         display:block;
         margin:auto;
-    }
+    } 
+   
 }
 
 
