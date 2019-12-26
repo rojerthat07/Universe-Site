@@ -513,6 +513,10 @@
         display:none;
     }
 
+    @include desktop{
+        display:none;
+    }
+
     img {
         width: 17em;
         height: auto;
@@ -565,6 +569,9 @@
     display:none;
     @include laptop{
         display: block;
+    }
+    @include desktop{
+        display:block;
     }
     .planet{
         padding:2em;
