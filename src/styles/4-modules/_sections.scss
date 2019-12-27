@@ -654,5 +654,17 @@
     }
 }
 
+.universe-size{
+    width: 100%;
+    height:500px;
+    margin:auto;
+    @include laptop{
+        height:400px;
+    }
+    @include tablet{
+        height:350px;
+    }
+}
+
 
 
