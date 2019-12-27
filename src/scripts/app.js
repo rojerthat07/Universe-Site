@@ -65,10 +65,9 @@ const scene5 = new ScrollMagic.Scene({
 .addTo(controller)
 
 
+//About Section
 const abouttl = new TimelineMax();
 
-//Scences from index.html
-    //1
 abouttl.from(".about__heading",3, {opacity:0});
 abouttl.from(".about__image",3, {opacity:0});
 abouttl.from("#about__paragraph-1",3, {opacity:0});
