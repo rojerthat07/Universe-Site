@@ -65,6 +65,25 @@ const scene5 = new ScrollMagic.Scene({
 .addTo(controller)
 
 
+const abouttl = new TimelineMax();
+
+//Scences from index.html
+    //1
+abouttl.from(".about__heading",3, {opacity:0});
+abouttl.from(".about__image",3, {opacity:0});
+abouttl.from("#about__paragraph-1",3, {opacity:0});
+abouttl.from("#about__paragraph-2",3, {opacity:0});
+abouttl.from("#about__paragraph-3",3, {opacity:0});
+abouttl.from("#about__paragraph-4",3, {opacity:0});
+abouttl.from(".about__quotation",3, {opacity:0}, '-=2');
+
+const aboutScene1 = new ScrollMagic.Scene({
+    triggerElement: ".about__heading"
+})
+.setTween(abouttl)
+.addTo(controller)
+
+
 
 //Typing Effect
 const TypeWriter = function(txtElement,words,wait = 5000){
