@@ -11,9 +11,15 @@
         width:60%;
         margin: 1em auto;
         color: white;
+        line-height: 2em;
         @include tablet{
             font-size: .9em;
             width:80%;
+        }
+        @include mobile {
+            font-size: .8em;
+            margin: 2em auto;
+            width:90%;
         }
     }
     .about__image{

@@ -6,6 +6,10 @@
         border:2px solid rgb(109, 33, 109);
         background-color: black;
         color:white;
+        @include mobile {
+            font-size: .7em;
+            margin:1em;
+        }
         &:hover{
             background-color: rgb(56, 55, 55);
         }

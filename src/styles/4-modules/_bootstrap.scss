@@ -8,8 +8,14 @@
             @include tablet{
                 font-size: 2em;
             }
+            @include mobile {
+                font-size: 1.5em;
+            }
         }
     }
 }
+
+
+
 
 
