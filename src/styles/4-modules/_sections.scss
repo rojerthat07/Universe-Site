@@ -156,14 +156,14 @@
    }
 
     @media (min-height: 800px) {
-        height:60vh;
+      
     }
     
 
     .universe__video {
         top: 0;
         left: 0;
-        width: 100vw;
+        width: 100%;
         height: auto;
 
         video {
@@ -176,8 +176,8 @@
 
     .universe__background--overlay {
         position: absolute;
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         top: 0;
         left: 0;
         background-color: rgb(2, 2, 2);
@@ -186,9 +186,7 @@
         @include desktop{
             height:90vh;
         }
-        @media (min-height: 800px) {
-            height:60vh;
-        }
+       
     }
 
     .universe__content {
@@ -212,6 +210,9 @@
            }
            @include mobile{
             top: 30%;
+        }
+        @media (min-height: 800px) {
+            top: 40%;
         }
         
      
@@ -269,6 +270,9 @@
         }
         @include mobile{
             bottom: 12%;
+        }
+        @media (min-height: 800px) {
+            font-size:1em;
         }
        
       

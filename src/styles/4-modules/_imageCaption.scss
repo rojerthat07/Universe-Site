@@ -16,8 +16,9 @@
         right:50%;
         left:3%;
         font-size:5em;
-        font-family: 'Moon';
+        font-family: 'Varela Round', sans-serif;
         text-shadow: 3px 3px 2px black;
+        text-transform: uppercase;
 
         @include desktop{
           right:2%;
