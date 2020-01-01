@@ -23,7 +23,7 @@
         @include desktop{
           right:2%;
           top:15%;
-          font-size:7em;
+          font-size:6em;
           text-align: center;
           text-shadow: 3px 3px 2px black;
         }
@@ -38,12 +38,12 @@
       }
 
       @include tablet {
-        font-size:4em;
+        font-size:3em;
         right:50%;
       }
 
       @include mobile {
-        font-size:3em;
+        font-size:2em;
       
       }
 

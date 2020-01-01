@@ -11,20 +11,33 @@
         text-align: center;
     }
 
-    @include mobile{
+    @include tablet{
         grid-template-columns: 1fr;
 
     }
-
+    .footer__content:nth-of-type(4){
+        @include tablet{
+            border-bottom: none;
+            padding:1em;
+        }
+    
+    }
     .footer__content{
         @include mobile{
            border-bottom:1px solid black;
             padding:1em 0;
         }
+        
+    @include tablet{
+        border-bottom: 1px solid black;
+        padding:1em;
+
+    }
         a{
             color:black;
             &:hover{
-                color:rgb(128, 123, 123);
+                color:rgb(123, 128, 128);
+                text-decoration: none;
             }
         }
     
@@ -69,6 +82,7 @@
     
         .footer__button{
             padding: .5em 1em;
+            display: block;
             background-color: rgb(109, 33, 109);
             font-size: .9em;
             border:none;
@@ -77,8 +91,11 @@
             &:hover{
                 background-color: rgb(68, 22, 68);
             }
+             @include laptop{
+                margin: 1.5em auto;
+            }
             @include tablet{
-                font-size: .8em;
+                font-size: .7em;
             }
             @include mobile{
                 font-size: .6em;

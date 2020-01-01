@@ -12,6 +12,11 @@
                 font-size: 1.5em;
             }
         }
+        p{
+            @include tablet{
+                font-size: .8em;
+            }
+        }
     }
 }
 
