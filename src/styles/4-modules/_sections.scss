@@ -8,6 +8,7 @@
     font-weight: normal;
     text-align: center;
     cursor: pointer;
+    
     @include laptop{
         font-size: 4.5em;
        }
@@ -109,6 +110,7 @@
     text-align: center;
     font-size: .9em;
     line-height: 2em;
+
     @include laptop{
         font-size: .8em;
        }
@@ -135,7 +137,11 @@
     p {
         padding: 2em 0;
         border-bottom: 1px solid rgb(109, 33, 109);
-
+        width:90%;
+        margin: auto;
+        @include tablet{
+            width:100%;
+        }
         &:hover {
             border-bottom: 1px solid rgb(219, 215, 219);
         }
@@ -654,7 +660,11 @@
         padding:2em 0em;
     }
      .section__description{
-         
+        width:80%;
+        margin: auto;
+        @include tablet{
+            width:100%;
+        }
      }
     }
     .planets__description--header{
