@@ -1,17 +1,19 @@
 .button--go__container{
     .button--go__button{
         display:inline-block;
-        padding: 0.5em 2em;
-        font-size: 0.8em;
-        border:2px solid rgb(109, 33, 109);
+        padding: 0.5em 5em;
+        font-size: .9em;
+        border:1px solid rgb(109, 33, 109);
         background-color: black;
         color:white;
+        transition: 1s;
         @include mobile {
             font-size: .7em;
             margin:1em;
         }
         &:hover{
-            background-color: rgb(56, 55, 55);
+            background-color: rgba(56, 55, 55,0.6);
+            border: 1px solid white;
         }
     }
 }
