@@ -87,6 +87,7 @@
         font-size: 5em;
         padding:0;
         transform: translate(-50%,-50%);
+        font-weight: lighter;
        
        
             @include laptop{
@@ -233,7 +234,8 @@
            }
 
            .universe-txt{
-               font-family: 'Roboto Thin';
+               font-family: 'Roboto';
+               font-weight: lighter;
                display: inline-block;
                .pointer{
                 
@@ -246,6 +248,7 @@
 
         .universe__information {
             line-height: 1.6em;
+            font-weight: lighter;
             @include laptop{
                 font-size: .8em;
                }
